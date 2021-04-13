@@ -22,13 +22,6 @@ router.post('/upload-image', (req, res) => {
         } else if (!req.file) {
             return res.send('Please select an image to upload');
         } 
-        // else if (err instanceof multer.MulterError) {
-        //     return res.send(err);
-        // } else if (err) {
-        //     return res.send(err);
-        // }
-        //res.send(`You have uploaded this image: <hr/><img src="${req.file.path}" width="500"><hr /><a href="./index">Upload another image</a>`);
-
         res.render('upload-image')
     });
 
